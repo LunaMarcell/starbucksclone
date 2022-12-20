@@ -1,0 +1,64 @@
+<html>
+ <head> 
+  <link rel="stylesheet" href="style.css">
+  <title> Starbucks Website Landing Page </title>
+  
+ </head>
+  
+ <body>
+  <section>
+   <div class="circle"></div> 
+ <header> 
+ <a href="#" ><img class="logo" src="img/logo.png"> </a>
+ 
+ <ul> 
+ <li><a href="#">Home</a> </li>
+ <li><a href="#">Menu</a> </li>
+ <li><a href="#">What's New</a> </li>
+ <li><a href="#">Contact</a> </li>
+  
+ </ul>
+ </header>
+ <div class="content">
+   <div class="textBox">
+      <h2> It's not just coffee<br> It's <span> Starbucks </span> </h2>
+	  <p> 
+	  Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.A
+	  enean aliquam molestie leo, vitae iaculis nisl.Interagi no mé, cursus quis, vehicula ac nisi.Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.	  </p>
+	  <a href="#"> Learn More</a>
+	  </div> 
+	  
+	   <div class="imgBox">
+    <img src="img/img1.png" class="starbucks">
+   </div>
+	  
+   
+   </div>
+   <ul class="thumb"> 
+   <li> <img src="img/thumb1.png" onclick="imgSlider('img/img1.png');changeCircleColor('#017143')"> </li>
+   <li> <img src="img/thumb2.png" onclick="imgSlider('img/img2.png');changeCircleColor('#eb7495')"> </li>
+   <li> <img src="img/thumb3.png" onclick="imgSlider('img/img3.png');changeCircleColor('#d752b1')"> </li>
+   
+   </ul>
+    <ul class="sci"> 
+	<li> <a href="#"> <img src="img/facebook.png"> </a> </li>
+	<li> <a href="#"> <img src="img/twitter.png"> </a> </li>
+	<li> <a href="#"> <img src="img/instagram.png"> </a> </li>
+	
+	</ul>
+  </section>
+  
+  <script type="text/javascript">
+   function imgSlider(anything){
+     document.querySelector('.starbucks').src=anything;
+   }
+   
+   function changeCircleColor(color){ 
+    const circle = document.querySelector('.circle');
+	circle.style.background = color;
+   }
+  </script>
+  
+ </body>
+
+</html>
